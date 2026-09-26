@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ASN Software Solutions | Ahmad S. Nassour</title>
+<meta name="description" content="ASN Software Solutions, founded by Ahmad S. Nassour. Custom software, websites and apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #EEF3F8; --surface: #FFFFFF; --ink: #14213D; --muted: #5B6B82;
+    --accent: #2F5BEA; --accent-2: #0E9F8A; --line: #D5DEEA;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1729; --surface: #16213A; --ink: #E8EEF7; --muted: #9AAAC2;
+      --accent: #7C9BFF; --accent-2: #3CCFB5; --line: #26345A;
+    }
+  }
+  *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font: 400 1.125rem/1.6 "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  }
+  h1, h2, h3, .brand { font-family: "Sora", "Segoe UI", Arial, sans-serif; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 4px; }
+  .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
+
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; }
+  .brand { font-weight: 800; font-size: 1.25rem; text-decoration: none; color: var(--ink); }
+  nav ul { list-style: none; display: flex; gap: 1.5rem; }
+  nav ul a { color: var(--muted); text-decoration: none; font-weight: 600; }
+  nav ul a:hover { color: var(--ink); }
+
+  .hero { padding: 4rem 0 5rem; }
+  .mark {
+    font-family: "Sora", sans-serif; font-weight: 800; line-height: .85;
+    font-size: clamp(6rem, 24vw, 16rem); letter-spacing: -.04em;
+    color: transparent; -webkit-text-stroke: 2px var(--ink);
+    display: flex; gap: .05em;
+  }
+  .mark span:first-child { color: var(--accent); -webkit-text-stroke: 0; }
+  .hero h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 600; margin-top: 2rem; max-width: 22ch; line-height: 1.2; }
+  .hero p { color: var(--muted); max-width: 55ch; margin-top: 1rem; }
+  .btn {
+    display: inline-block; margin-top: 2rem; padding: .85rem 1.5rem;
+    background: var(--accent); color: #fff; text-decoration: none;
+    font-weight: 600; border-radius: 8px;
+  }
+  .btn:hover { filter: brightness(1.1); }
+
+  section { padding: 4rem 0; border-top: 1px solid var(--line); }
+  section h2 { font-size: 1.75rem; margin-bottom: 1.5rem; }
+  .about p { max-width: 60ch; margin-bottom: 1rem; }
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 2rem; }
+  .services div { border-left: 3px solid var(--accent-2); padding-left: 1.25rem; }
+  .services h3 { font-size: 1.15rem; margin-bottom: .4rem; }
+  .services p { color: var(--muted); }
+  .contact p { max-width: 55ch; }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.5rem; font-weight: 600; font-size: 1.2rem; }
+
+  footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .95rem; border-top: 1px solid var(--line); }
+
+  @media (max-width: 36rem) { nav ul { gap: 1rem; font-size: 1rem; } .hero { padding-top: 2rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#">ASN</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="mark" aria-hidden="true"><span>A</span><span>S</span><span>N</span></div>
+    <h1>ASN Software Solutions</h1>
+    <p>Software, websites and apps built by Ahmad S. Nassour for businesses and people who need technology that simply works.</p>
+    <a class="btn" href="#contact">Start a project</a>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About</h2>
+    <!-- EDIT: replace with your own story -->
+    <p>I'm Ahmad S. Nassour, founder of ASN Software Solutions. I design and build software that solves real problems, from simple websites to complete business systems.</p>
+    <p>I work directly with every client, so you always know who is building your project and how it's progressing.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <!-- EDIT: change these to the services you actually offer -->
+    <div class="services">
+      <div><h3>Websites</h3><p>Fast, mobile-friendly websites for businesses, portfolios and personal brands.</p></div>
+      <div><h3>Custom software</h3><p>Tools built around how your business works: inventory, invoicing, booking and more.</p></div>
+      <div><h3>Mobile apps</h3><p>Apps for Android and iOS, from the first idea to publishing in the store.</p></div>
+      <div><h3>Support and maintenance</h3><p>Updates, fixes and improvements to keep your software running smoothly.</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>Have a project in mind? Send a message and I'll get back to you.</p>
+    <div class="contact-links">
+      <!-- EDIT: put your real email address in both places below -->
+      <a href="mailto:your-email@example.com">your-email@example.com</a>
+      <a href="https://github.com/ahmadnassourofficial">GitHub</a>
+    </div>
+  </section>
+</div>
+
+<footer>
+  <div class="wrap">© 2026 ASN Software Solutions · Ahmad S. Nassour</div>
+</footer>
+</body>
+</html>
