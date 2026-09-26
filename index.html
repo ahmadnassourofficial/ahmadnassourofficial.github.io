@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ASN Software Solutions | Ahmad S. Nassour</title>
-<meta name="description" content="ASN Software Solutions, founded by Ahmad S. Nassour. Custom software, websites and apps.">
+<title>Ahmad S. Nassour | Developer & MIS Instructor</title>
+<meta name="description" content="Ahmad S. Nassour: senior developer and university instructor in Management Information Systems. PHP and MySQL business applications, data management and business intelligence.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -28,47 +28,58 @@
     background: var(--bg); color: var(--ink);
     font: 400 1.125rem/1.6 "Source Sans 3", "Segoe UI", Arial, sans-serif;
   }
-  h1, h2, h3, .brand { font-family: "Sora", "Segoe UI", Arial, sans-serif; }
+  h1, h2, h3, .brand, .mark { font-family: "Sora", "Segoe UI", Arial, sans-serif; }
   a { color: var(--accent); }
   a:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 3px; border-radius: 4px; }
   .wrap { max-width: 68rem; margin: 0 auto; padding: 0 1.5rem; }
 
-  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 0; gap: 1rem; }
   .brand { font-weight: 800; font-size: 1.25rem; text-decoration: none; color: var(--ink); }
-  nav ul { list-style: none; display: flex; gap: 1.5rem; }
+  nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; }
   nav ul a { color: var(--muted); text-decoration: none; font-weight: 600; }
   nav ul a:hover { color: var(--ink); }
 
-  .hero { padding: 4rem 0 5rem; }
+  .hero { padding: 3.5rem 0 5rem; }
   .mark {
-    font-family: "Sora", sans-serif; font-weight: 800; line-height: .85;
-    font-size: clamp(6rem, 24vw, 16rem); letter-spacing: -.04em;
-    color: transparent; -webkit-text-stroke: 2px var(--ink);
-    display: flex; gap: .05em;
+    font-weight: 800; line-height: .85; font-size: clamp(6rem, 24vw, 16rem);
+    letter-spacing: -.04em; color: var(--ink); display: flex; gap: .05em;
   }
-  .mark span:first-child { color: var(--accent); -webkit-text-stroke: 0; }
-  .hero h1 { font-size: clamp(1.75rem, 4vw, 2.75rem); font-weight: 600; margin-top: 2rem; max-width: 22ch; line-height: 1.2; }
-  .hero p { color: var(--muted); max-width: 55ch; margin-top: 1rem; }
+  .mark span:first-child { color: var(--accent); }
+  .hero h1 { font-size: clamp(2rem, 5vw, 3.25rem); font-weight: 800; margin-top: 2rem; line-height: 1.1; }
+  .role { font-family: "Sora", sans-serif; font-weight: 600; font-size: clamp(1.1rem, 2.4vw, 1.4rem); color: var(--accent-2); margin-top: .75rem; }
+  .hero p.lead { color: var(--muted); max-width: 58ch; margin-top: 1.25rem; }
   .btn {
     display: inline-block; margin-top: 2rem; padding: .85rem 1.5rem;
-    background: var(--accent); color: #fff; text-decoration: none;
-    font-weight: 600; border-radius: 8px;
+    background: var(--accent); color: #fff; text-decoration: none; font-weight: 600; border-radius: 8px;
   }
   .btn:hover { filter: brightness(1.1); }
 
   section { padding: 4rem 0; border-top: 1px solid var(--line); }
   section h2 { font-size: 1.75rem; margin-bottom: 1.5rem; }
-  .about p { max-width: 60ch; margin-bottom: 1rem; }
-  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 2rem; }
-  .services div { border-left: 3px solid var(--accent-2); padding-left: 1.25rem; }
-  .services h3 { font-size: 1.15rem; margin-bottom: .4rem; }
-  .services p { color: var(--muted); }
+  .intro { color: var(--muted); max-width: 60ch; margin: -0.75rem 0 2rem; }
+  .about p { max-width: 62ch; margin-bottom: 1rem; }
+
+  .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1.25rem; }
+  .project { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; }
+  .project h3 { font-size: 1.15rem; margin-bottom: .5rem; }
+  .project p { color: var(--muted); }
+  .stack { margin-top: 1rem; font-size: .95rem; font-weight: 600; color: var(--accent-2); }
+
+  .teaching { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 2rem; }
+  .teaching div { border-left: 3px solid var(--accent-2); padding-left: 1.25rem; }
+  .teaching h3 { font-size: 1.1rem; margin-bottom: .4rem; }
+  .teaching p { color: var(--muted); }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 2rem; }
+  .skills h3 { font-size: 1rem; color: var(--muted); font-weight: 600; margin-bottom: .75rem; }
+  .skills ul { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; }
+  .skills li { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: .3rem .85rem; font-size: 1rem; }
+
   .contact p { max-width: 55ch; }
   .contact-links { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.5rem; font-weight: 600; font-size: 1.2rem; }
 
   footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .95rem; border-top: 1px solid var(--line); }
-
-  @media (max-width: 36rem) { nav ul { gap: 1rem; font-size: 1rem; } .hero { padding-top: 2rem; } }
+  @media (max-width: 36rem) { nav ul { gap: .4rem 1rem; font-size: 1rem; } .hero { padding-top: 2rem; } }
 </style>
 </head>
 <body>
@@ -77,39 +88,83 @@
     <a class="brand" href="#">ASN</a>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <header class="hero">
     <div class="mark" aria-hidden="true"><span>A</span><span>S</span><span>N</span></div>
-    <h1>ASN Software Solutions</h1>
-    <p>Software, websites and apps built by Ahmad S. Nassour for businesses and people who need technology that simply works.</p>
-    <a class="btn" href="#contact">Start a project</a>
+    <h1>Ahmad S. Nassour</h1>
+    <p class="role">Senior developer and university instructor in Management Information Systems</p>
+    <p class="lead">I build database-driven business applications with PHP and MySQL, and I teach students how data, programming and information systems work in real organizations.</p>
+    <a class="btn" href="#projects">See my projects</a>
   </header>
 
   <section class="about" id="about">
     <h2>About</h2>
-    <!-- EDIT: replace with your own story -->
-    <p>I'm Ahmad S. Nassour, founder of ASN Software Solutions. I design and build software that solves real problems, from simple websites to complete business systems.</p>
-    <p>I work directly with every client, so you always know who is building your project and how it's progressing.</p>
+    <p>I'm a university instructor and coordinator in Management Information Systems, and a senior developer. My work sits where business and technology meet: understanding how an organization runs, then designing the database and the application that support it.</p>
+    <p>Over the years I've developed complete systems for retail, automotive, equipment servicing and subscription-based businesses. I publish my software work under the name ASN Software Solutions.</p>
   </section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <!-- EDIT: change these to the services you actually offer -->
-    <div class="services">
-      <div><h3>Websites</h3><p>Fast, mobile-friendly websites for businesses, portfolios and personal brands.</p></div>
-      <div><h3>Custom software</h3><p>Tools built around how your business works: inventory, invoicing, booking and more.</p></div>
-      <div><h3>Mobile apps</h3><p>Apps for Android and iOS, from the first idea to publishing in the store.</p></div>
-      <div><h3>Support and maintenance</h3><p>Updates, fixes and improvements to keep your software running smoothly.</p></div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="intro">A selection of the business systems I've designed and developed, from database design to the finished application.</p>
+    <div class="projects">
+      <article class="project">
+        <h3>Supermarket point of sale</h3>
+        <p>A POS system for supermarkets covering sales at the checkout, products and pricing, receipts and daily sales reporting.</p>
+        <p class="stack">PHP · MySQL</p>
+      </article>
+      <article class="project">
+        <h3>Inventory and stock control</h3>
+        <p>Applications for tracking stock levels, incoming and outgoing items, and inventory movements across a business.</p>
+        <p class="stack">PHP · MySQL</p>
+      </article>
+      <article class="project">
+        <h3>Car dealership management</h3>
+        <p>A system for car dealers that manages vehicle sales, maintenance and credit facilities for customers.</p>
+        <p class="stack">PHP · MySQL</p>
+      </article>
+      <article class="project">
+        <h3>Money counting machines service management</h3>
+        <p>Manages machines, contracts, customers, suppliers, employees, spare parts and scheduled maintenance visits for a machine servicing company.</p>
+        <p class="stack">PHP · MySQL</p>
+      </article>
+      <article class="project">
+        <h3>Subscription management</h3>
+        <p>Subscription tracking systems adapted for several fields, handling members, plans, renewals and payments.</p>
+        <p class="stack">PHP · MySQL</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <p class="intro">Courses I teach as part of the Management Information Systems program.</p>
+    <div class="teaching">
+      <div><h3>Programming fundamentals</h3><p>Core programming concepts and problem solving with Python.</p></div>
+      <div><h3>Data management</h3><p>Database design and building data-driven solutions, including with Microsoft Access.</p></div>
+      <div><h3>Business intelligence and data analysis</h3><p>Turning data into insight with Tableau and Excel.</p></div>
+      <div><h3>Knowledge management</h3><p>How organizations capture, share and use what they know.</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Development</h3><ul><li>PHP</li><li>Python</li><li>Web applications</li></ul></div>
+      <div><h3>Databases</h3><ul><li>MySQL</li><li>MySQL Workbench</li><li>phpMyAdmin</li><li>Microsoft Access</li><li>Database design</li></ul></div>
+      <div><h3>Data and BI</h3><ul><li>Tableau</li><li>Excel</li><li>Data analysis</li></ul></div>
+      <div><h3>Information systems</h3><ul><li>Business process analysis</li><li>Knowledge management</li><li>Systems design</li></ul></div>
     </div>
   </section>
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
-    <p>Have a project in mind? Send a message and I'll get back to you.</p>
+    <p>Whether you're a student, a colleague or interested in my work, feel free to get in touch.</p>
     <div class="contact-links">
       <a href="mailto:ahmadnassour2016@gmail.com">ahmadnassour2016@gmail.com</a>
       <a href="https://github.com/ahmadnassourofficial">GitHub</a>
@@ -118,7 +173,7 @@
 </div>
 
 <footer>
-  <div class="wrap">© 2026 ASN Software Solutions · Ahmad S. Nassour</div>
+  <div class="wrap">© 2026 Ahmad S. Nassour</div>
 </footer>
 </body>
 </html>

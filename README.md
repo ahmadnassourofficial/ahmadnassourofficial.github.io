@@ -1,19 +1,20 @@
-# ASN Software Solutions
+# Ahmad S. Nassour
 
-Official website of **ASN Software Solutions**, founded by **Ahmad S. Nassour**.
+Personal website and portfolio of **Ahmad S. Nassour**, senior developer and university instructor in Management Information Systems.
 
 🌐 **Live site:** [ahmadnassourofficial.github.io](https://ahmadnassourofficial.github.io)
 
 ## About
 
-ASN Software Solutions builds websites, custom software and mobile apps for businesses and individuals who need technology that simply works.
+I build database-driven business applications with PHP and MySQL, and I teach programming fundamentals, data management, business intelligence and knowledge management.
 
-## Services
+## Featured projects
 
-- **Websites** – fast, mobile-friendly sites for businesses, portfolios and personal brands
-- **Custom software** – tools built around how your business works, such as inventory, invoicing and booking
-- **Mobile apps** – Android and iOS apps, from the first idea to publishing in the store
-- **Support and maintenance** – updates, fixes and improvements to keep your software running smoothly
+- **Supermarket point of sale**: checkout sales, products, pricing and daily reporting
+- **Inventory and stock control**: stock levels and inventory movements
+- **Car dealership management**: vehicle sales, maintenance and credit facilities
+- **Money counting machines service management**: machines, contracts, customers, suppliers, spare parts and maintenance visits
+- **Subscription management**: members, plans, renewals and payments
 
 ## Contact
 
@@ -22,8 +23,4 @@ ASN Software Solutions builds websites, custom software and mobile apps for busi
 
 ## About this repository
 
-This repository hosts the website using [GitHub Pages](https://pages.github.com). The whole site is a single `index.html` file with no frameworks or build steps. Any change pushed to the `main` branch goes live automatically within a few minutes.
-
----
-
-© 2026 ASN Software Solutions. All rights reserved.
+This site is hosted with [GitHub Pages](https://pages.github.com) as a single `index.html` file with no frameworks or build steps.
