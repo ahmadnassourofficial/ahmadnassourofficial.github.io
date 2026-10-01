@@ -2,7 +2,7 @@
 
 Personal website and portfolio of **Ahmad S. Nassour**, senior developer and university instructor in Management Information Systems.
 
-🌐 **Live site:** [ahmadnassourofficial.github.io](https://ahmadnassourofficial.github.io)
+🌐 **Live site:** [ahmadnassour.is-a.dev](https://ahmadnassour.is-a.dev)
 
 ## About
 
